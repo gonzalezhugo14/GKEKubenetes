@@ -1,5 +1,8 @@
-# GKEKubenetes
-Kubernetes demo 
+# Terraform + GKE + Kubenetes
+DEMO 
+k8s Cluster 3 nodes Guestbook app ( AngularJS,PHP and Redis) From Google Registry
+_______________________________________________________________________________________
+
 Organizing into Modules
 We’ll start by setting up this directory structure, and files referenced will use this:
 
@@ -84,8 +87,9 @@ Now we can see what we want to create and then create it:
 
 terraform plan
 terraform apply
-After some time (10 to 20 minutes) we can test out our application. Run this to see the end points:
+After some time (3 to 5 minutes) we can test out our application. Run this to see the end points:
 
 kubectl get service
+
 Final Thoughts
 This is an easy way to quickly test clusters, pods, services, and other components. Currently, Terraform only supports deploying Pods and ReplicationControllers as deployable units.
