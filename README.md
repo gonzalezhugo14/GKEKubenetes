@@ -72,14 +72,14 @@ services.tf
 Launch the Application
 Before we start, we need to initialize some variables that the GCP provider requires, which is the target project and the desired region to create the cluster. We’ll use our default project configured with gcloud:
 
-export TF_VAR_project="$(gcloud config list \
-  --format 'value(core.project)'
-)"
+export TF_VAR_project="$(gcloud config list \  --format 'value(core.project)')"
 export TF_VAR_region="us-east1"
+
 Now we’ll need to specify the administrative account and a random password for the cluster:
 
 export TF_VAR_user="admin"
-export TF_VAR_password="m8XBWrg2zt8R8JoH"
+exportTF_VAR_password="Clust3rK8s4D3monstr4ti0n"
+
 With these setup, we can initialize our environment, which includes both downloading plugins required google cloud provider and kubernetes provider, as well as references to our modules.
 
 terraform init
