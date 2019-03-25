@@ -4,6 +4,7 @@
 resource "google_container_cluster" "guestbook" {
   name               = "guestbook"
   zone               = "us-east1-b"
+  enable_legacy_abac =  true
   initial_node_count = 3
 
   addons_config {
